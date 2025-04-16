@@ -13,8 +13,8 @@ func GetCourses(c *gin.Context) {
 	categoryIDStr := c.Query("category_id")
 	instructorIDStr := c.Query("instructor_id")
 
-	pageStr := c.DefaultQuery("page", "1")    // по умолчанию страница 1
-	limitStr := c.DefaultQuery("limit", "10") // по умолчанию 10 элементов на страницу
+	pageStr := c.DefaultQuery("page", "1")
+	limitStr := c.DefaultQuery("limit", "10")
 
 	page, _ := strconv.Atoi(pageStr)
 	limit, _ := strconv.Atoi(limitStr)
